@@ -1,0 +1,280 @@
+﻿
+@{
+    ViewBag.Title = "Lista";
+}
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="text-center">Gerenciador de Contatos</h1>
+    </div>
+</div>
+<div class="container top-distance1">
+
+    <div class="row">
+        <!-- Marcadores de Texto -->
+
+        <div class="col-md-12">
+            <label for="marcador-textual" class="marker-title">Marcadores Textuais</label>
+        </div>
+
+    </div>
+
+    <div class="row bottom-distance1">
+        <!-- Formulários -->
+
+        <form role="form">
+            <!-- Filtragem -->
+
+            <div class="col-md-3 hidden-xs hidden-sm">
+                <select class="form-control col-md-4" id="marcador-textual">
+                    <option>Todos</option>
+                    <option>Trabalho</option>
+                    <option>Família</option>
+                    <option>Escola</option>
+                    <option>Amigos</option>
+                </select>
+            </div>
+            <div class="col-md-3 hidden-xs hidden-sm">
+                <button type="button" class="btn btn-green left-distance-5">
+                    <span class="glyphicon glyphicon-list"> Filtrar</span>
+                </button>
+            </div>
+
+            <!-- Para dispositivos mobiles -->
+            <div class="col-xs-8 hidden-md hidden-lg">
+                <select class="form-control col-md-4" id="marcador-textual">
+                    <option>Todos</option>
+                    <option>Trabalho</option>
+                    <option>Família</option>
+                    <option>Escola</option>
+                    <option>Amigos</option>
+                </select>
+            </div>
+            <div class="col-xs-4 hidden-md hidden-lg">
+                <button type="button" class="btn btn-green">
+                    <span class="glyphicon glyphicon-list"> Filtrar</span>
+                </button>
+            </div>
+
+        </form>
+
+        <form role="form">
+            <!-- Pesquisa -->
+
+            <div class="col-md-4 hidden-xs hidden-sm">
+                <input type="text" name="nome" placeholder="Pesquisar por Nome ou Contato" class="form-control left-distance20" />
+            </div>
+            <div class="col-md-2 hidden-xs hidden-sm">
+                <button type="button" class="btn btn-green pull-right">
+                    <span class="glyphicon glyphicon-search"> Pesquisar</span>
+                </button>
+            </div>
+
+            <!-- para dispositivos Móveis -->
+            <div class="col-xs-8 hidden-md hidden-lg top-distance1">
+                <input type="text" name="nome" placeholder="Pesquisar por Nome ou Contato" class="form-control " />
+            </div>
+
+            <div class="col-xs-4 hidden-md hidden-lg top-distance1">
+                <button type="button" class="btn btn-green">
+                    <span class="glyphicon glyphicon-search"> Pesquisar</span>
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="row">
+        <!-- Tabela -->
+
+        <div class="col-md-12">
+
+            <table id="contatos" class="table table-striped table-bordered table-hover table-responsive tablesorter">
+                <thead>
+                    <tr>
+                        <th id="ordem" class="name-table-cell text-center clickable">
+                            Nome
+
+                            <div id="az" class="pull-right">
+                                <span class="glyphicon glyphicon-sort-by-alphabet"></span>
+                            </div>
+                            <div id="za" class="pull-right">
+                                <span class="glyphicon glyphicon-sort-by-alphabet-alt"></span>
+                            </div>
+                            <div id="sort" class="pull-right">
+                                <span class="glyphicon glyphicon-sort"></span>
+                            </div>
+
+                        </th>
+                        <th class="select-table-cell text-center">Tipo de Contato</th>
+                        <th class="contact-table-cell text-center">Contato</th>
+                        <th class="icon-table-cell text-center">Editar</th>
+                        <th class="icon-table-cell text-center">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <td>Diogo Araujo Alves</td>
+                        <td>
+                            <select class="form-control">
+                                <option>E-mail</option>
+                                <option>Celular</option>
+                                <option>Telefone</option>
+                                <option>IM</option>
+                                <option>Site</option>
+                            </select>
+                        </td>
+                        <td>diogo@gmail.com</td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr class="text-center">
+                        <td>Maria Silva Castro</td>
+                        <td>
+                            <select class="form-control">
+                                <option>E-mail</option>
+                                <option>Celular</option>
+                                <option>Telefone</option>
+                                <option>IM</option>
+                                <option>Site</option>
+                            </select>
+                        </td>
+                        <td>maria@gmail.com</td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr class="text-center">
+                        <td>Rodrigo Ferreira Cardoso</td>
+                        <td>
+                            <select class="form-control">
+                                <option>E-mail</option>
+                                <option>Celular</option>
+                                <option>Telefone</option>
+                                <option>IM</option>
+                                <option>Site</option>
+                            </select>
+                        </td>
+                        <td>rodrigo@gmail.com</td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr class="text-center">
+                        <td>Sophia Sousa Fernandes</td>
+                        <td>
+                            <select class="form-control">
+                                <option>E-mail</option>
+                                <option>Celular</option>
+                                <option>Telefone</option>
+                                <option>IM</option>
+                                <option>Site</option>
+                            </select>
+                        </td>
+                        <td>sophia@gmail.com</td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr class="text-center">
+                        <td>Paulo Ferreira Sousa</td>
+                        <td>
+                            <select class="form-control">
+                                <option>E-mail</option>
+                                <option>Celular</option>
+                                <option>Telefone</option>
+                                <option>IM</option>
+                                <option>Site</option>
+                            </select>
+                        </td>
+                        <td>paulo@gmail.com</td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr class="text-center">
+                        <td>Luan Oliveira Goncalves</td>
+                        <td>
+                            <select class="form-control">
+                                <option>E-mail</option>
+                                <option>Celular</option>
+                                <option>Telefone</option>
+                                <option>IM</option>
+                                <option>Site</option>
+                            </select>
+                        </td>
+                        <td>luan@gmail.com</td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Paginação-->
+
+        <div class="col-md-12">
+
+            <ul class="pagination top-distance-1 pull-right">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+

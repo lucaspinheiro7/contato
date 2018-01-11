@@ -16,9 +16,148 @@
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+/* tom de verde #90c74a */
+
+/* Botão verde com cor do logo*/
+
+.btn-green {
+    color: #fff;
+    background-color: #90c74a;
+    border-color: #7faf41;
+}
+
+    .btn-green:hover,
+    .btn-green:focus,
+    .btn-green:active,
+    .btn-green.active,
+    .open .dropdown-toggle.btn-green {
+        color: #fff;
+        background-color: #7faf41;
+        border-color: #ddd;
+    }
+
+    .btn-green:active,
+    .btn-green.active,
+    .open .dropdown-toggle.btn-green {
+        background-image: none;
+    }
+
+    .btn-green.disabled,
+    .btn-green[disabled],
+    fieldset[disabled] .btn-green,
+    .btn-green.disabled:hover,
+    .btn-green[disabled]:hover,
+    fieldset[disabled] .btn-green:hover,
+    .btn-green.disabled:focus,
+    .btn-green[disabled]:focus,
+    fieldset[disabled] .btn-green:focus,
+    .btn-green.disabled:active,
+    .btn-green[disabled]:active,
+    fieldset[disabled] .btn-green:active,
+    .btn-green.disabled.active,
+    .btn-green[disabled].active,
+    fieldset[disabled] .btn-green.active {
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+    }
+
+    .btn-green .badge {
+        color: #5cb85c;
+        background-color: #fff;
+    }
+
+/* Navbar customização*/
+.navbar-default {
+    border-color: #cccccc;
+    position: relative;
+    max-height: 70px;
+}
+
+.navbar-custom .navbar-brand {
+    background: url(../Images/nd-engenharia.png) center / contain no-repeat;
+    width: 310px;
+    height: 118px;
+    text-indent: -9999px; /* Esconde o link do texto */
+    display: block;
+    margin-top: -40px;
+}
+
+
+.navbar-custom .nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+}
+
+.navbar-custom .navbar-toggle {
+    padding: 5px;
+    margin: 25px 15px 25px 0;
+}
+
+
+.select-table-cell {
+    width: 25%;
+}
+
+.contact-table-cell {
+    width: 30%;
+}
+
+.icon-table-cell {
+    width: 7.5%;
+}
+
+.name-table-cell {
+    width: 30%;
+}
+
+select {
+    text-align: center;
+    text-align-last: center;
+}
+
+.top-distance1 {
+    margin-top: 1%;
+}
+
+.top-distance5 {
+    margin-top: 5%;
+}
+
+
+.bottom-distance1 {
+    margin-bottom: 1%;
+}
+
+.top-distance-1 {
+    margin-top: -1%;
+}
+
+.left-distance20 {
+    margin-left: 20%;
+}
+
+.left-distance-5 {
+    margin-left: -5%;
+}
+
+.marker-title {
+    font-size: 20px;
+}
+
+.pagination > li > a {
+    color: #7faf41;
+}
+
+    .pagination > li > a:hover,
+    .pagination > li > span:hover,
+    .pagination > li > a:focus,
+    .pagination > li > span:focus {
+        color: #fff;
+        background-color: #7faf41;
+        border-color: #ddd;
+    }
+
+.clickable {
+    cursor: pointer;
 }
