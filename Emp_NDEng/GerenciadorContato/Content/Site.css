@@ -18,8 +18,6 @@
 
 /* tom de verde #90c74a */
 
-/* Botão verde com cor do logo*/
-
 .btn-green {
     color: #fff;
     background-color: #90c74a;
@@ -42,21 +40,16 @@
         background-image: none;
     }
 
-    .btn-green.disabled,
-    .btn-green[disabled],
-    fieldset[disabled] .btn-green,
-    .btn-green.disabled:hover,
-    .btn-green[disabled]:hover,
-    fieldset[disabled] .btn-green:hover,
-    .btn-green.disabled:focus,
-    .btn-green[disabled]:focus,
-    fieldset[disabled] .btn-green:focus,
-    .btn-green.disabled:active,
-    .btn-green[disabled]:active,
-    fieldset[disabled] .btn-green:active,
-    .btn-green.disabled.active,
-    .btn-green[disabled].active,
-    fieldset[disabled] .btn-green.active {
+.btn-green.disabled,
+fieldset[disabled] .btn-green,
+.btn-green.disabled:hover,
+fieldset[disabled] .btn-green:hover,
+.btn-green.disabled:focus,
+fieldset[disabled] .btn-green:focus,
+.btn-green.disabled:active,
+fieldset[disabled] .btn-green:active,
+.btn-green.disabled.active,
+fieldset[disabled] .btn-green.active {
         background-color: #5cb85c;
         border-color: #4cae4c;
     }
@@ -74,12 +67,16 @@
 }
 
 .navbar-custom .navbar-brand {
-    background: url(../Images/nd-engenharia.png) center / contain no-repeat;
+    background: url(../Images/nd-engenharia.png) center no-repeat;
+    background-size: contain;
     width: 310px;
     height: 118px;
-    text-indent: -9999px; /* Esconde o link do texto */
     display: block;
     margin-top: -40px;
+    /* Esconde o texto do link */
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
 }
 
 
